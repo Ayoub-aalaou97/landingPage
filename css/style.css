@@ -1,0 +1,259 @@
+/*start Utils*/
+:root {
+  --primary-font: "Inter", sans-serif;
+  --second-font: "Fira Code", monospace;
+  --primary-color: #1e1e2f;
+  --primary-white-color: rgba(255, 255, 255, 0.87);
+  --mute-txt: #c2c2c2;
+  --second-color: #dfba5c;
+  --third-color: #E7005A;
+}
+
+body{
+  font-family: var(--primary-font);
+  color: #f3f0f0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--second-font);
+  color: var(--second-color);
+}
+
+span.awesome-box {
+  background-color: var(--third-color);
+  padding: 2px 6px;
+}
+
+.btn-style-1{
+  background: linear-gradient(to right,
+    #C8A54E 23%,
+    #AE8F43 36%,
+    #7D6730 100%
+  );
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px;
+  position: relative;
+  z-index: 99;
+}
+
+.custom-shapes{
+  position: absolute;
+  z-index: 2;
+  filter: blur(1px);
+}
+
+.section-services{
+  background-color: #1E1E1E;
+  padding: 70px 0px;
+
+}
+.section-services h1{
+  font-family: var(--primary-font);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.mark-text{color: var(--third-color);}
+.mute-txt{color: var(--mute-txt);}
+/*end Utils*/
+
+/*start hero*/
+/* .hero-bg{
+  background-image: url(../img/hero-2.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+} */
+
+
+.hero-bg {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  background: url('../img/hero-2.png') center/cover no-repeat;
+  filter: blur(1px);
+  z-index: 0;
+  transform: scale(1.1);
+}
+
+
+.navbar-bg{
+  background-color: rgba(53, 51, 51, 0.76);
+}
+
+.site-logo{padding-top: 25px;}
+
+.site-logo img{
+  width: 200px;  
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: var(--second-color) !important;
+}
+
+.hero-content{
+  padding-top: 100px;
+}
+
+.hero-content .hero-text{
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 -1px 6px rgba(0, 0, 0, 0.25),
+    0 4px 4px rgba(255, 255, 255, 0.2);
+  margin: 30px 0 40px 0;
+}
+
+.hero-content .mockup{width: 400px;}
+
+
+.bg-shape-1{top: calc(100vh - 400px);}
+.bg-shape-2{top: calc(100vh - 410px); right: calc(100vh - 860px); z-index: 3;width: 350px;}
+.bg-shape-3{top: calc(100vh - 630px); right: calc(100vh - 780px);}
+.bg-shape-4{top: calc(100vh - 550px); right: calc(100vh - 760px); width: 115px;}
+.bg-shape-5{top: calc(100vh - 525px); right: calc(100vh - 520px); width: 90px;}
+/*end hero*/
+
+/*start contact ribbon*/
+.pink-ribbon{
+  background-color: var(--third-color);
+  padding: 10px 0;
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
+  font-family: var(--second-font);
+  color: var(--primary-white-color);
+}
+/*end contact ribbon*/
+
+/*start Solutions*/
+.solutions {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 120px !important;
+}
+
+.solutions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/hero-bg.jpg') center/cover no-repeat;
+  filter: blur(1px);
+  transform: scale(1.1);
+  /*z-index: 0; */
+}
+
+.solutions .container {
+  position: relative;
+  z-index: 1;
+}
+
+.solutions .card{
+  background-color: #1E1E1E; 
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 0;
+}
+
+.solutions .card:hover{border: 1px solid var(--second-color);cursor: pointer;}
+
+.solutions .card img{
+  width: 180px;
+}
+
+.solutions .card .card-title{color: var(--second-color);font-family: var(--primary-font);}
+
+.solutions .card .card-text{color: #fff}
+
+
+/*start client carousel*/
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--third-color);
+  opacity: 0.75;
+  color: white;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  font-size: 1.2rem;
+}
+
+.carousel-prev {
+  left: -70px;
+  top: 100px;
+}
+
+.carousel-next {
+  right: -70px;
+  top: 100px;
+}
+
+/*end Solutions*/
+
+/*start startup */
+.section-bg-1{
+  position: relative;
+  overflow: hidden;
+}
+
+.section-bg-1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/hero-bg.jpg') center/cover no-repeat;
+  filter: blur(1px);
+  transform: scale(1.1);
+}
+
+.startup h1{font-size: 30px;}
+/*end startup */
+
+/*start footer*/
+.footer-logo{width: 300px;}
+
+footer h5{color: var(--primary-white-color);}
+
+footer ul li > a {
+  line-height: 30px;
+  color: var(--mute-txt);
+}
+
+footer .list-unstyled.info li a{
+  color: var(--third-color) !important;
+}
+/*end footer*/
